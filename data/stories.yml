@@ -2,6 +2,15 @@ version: "2.0"
 
 stories:
 
+- story: happy weather path 
+  steps: 
+  - intent: greet 
+  - action: utter_greet 
+  - intent: mood_great
+  - action: utter_help
+  - intent: user_asks_weather 
+  - action: action_get_weather
+
 - story: happy path
   steps:
   - intent: greet

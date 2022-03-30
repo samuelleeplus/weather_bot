@@ -8,11 +8,26 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - user_asks_weather
+
+entities:
+  - GPE 
+
+slots:
+  GPE:
+    type: text
+
+actions:
+  - action_get_weather
 
 responses:
+  utter_user_thanks:
+  - text: "You're welcome!"
+  - text: "It is my pleasure!"
   utter_greet:
   - text: "Hey! How are you?"
-
+  utter_help:
+  - text: "So, how can I help you today?"
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"

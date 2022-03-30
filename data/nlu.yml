@@ -3,22 +3,22 @@ version: "2.0"
 nlu:
 - intent: user_asks_weather
   examples: | 
-    - What is the weather in [Chicago](location)?
-    - Could you tell me the current temperature in [London](location)?
-    - I want to know weather in [New York](location)?
-    - Today's weather in [Istanbul](location)?
-    - How warm is it in (Los Angeles)[location] today?
-    - How cold is the weather in (Brussels)[location] ?
-    - at (Shanghai)[location]
-    - (Paris)[location]?
-    - I am going outside today, what is the temperature in [Berlin](location)?
-    - in the [UK](location)?
-    - What does it feels like in [Seoul](location)?
-    - weather in [Tokyo](location)?
-    - [Taipei](location)?
-    - [Cairo](location)?
-    - temperature in [Amsterdam](location)
-    - [Venice](location) temperature now
+    - What is the weather in [Chicago](GPE)?
+    - Could you tell me the current temperature in [London](GPE)?
+    - I want to know weather in [New York](GPE)?
+    - Today's weather in [Istanbul](GPE)?
+    - How warm is it in (Los Angeles)[GPE] today?
+    - How cold is the weather in (Brussels)[GPE] ?
+    - at (Shanghai)[GPE]
+    - (Paris)[GPE]?
+    - I am going outside today, what is the temperature in [Berlin](GPE)?
+    - in the [UK](GPE)?
+    - What does it feels like in [Seoul](GPE)?
+    - weather in [Tokyo](GPE)?
+    - [Taipei](GPE)?
+    - [Cairo](GPE)?
+    - temperature in [Amsterdam](GPE)
+    - [Venice](GPE) temperature now
 
 - intent: greet
   examples: |
@@ -102,6 +102,17 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+- intent: user_thanks
+  examples: | 
+    - thanks alot
+    - thanks!
+    - i appreciate it 
+    - thank you very much 
+    - thx
+    - thank you 
+    - thank u 
+    - thanks 
+    - appreciate it
 
 - intent: bot_challenge
   examples: |
