@@ -11,12 +11,12 @@ stories:
   - intent: user_asks_weather 
   - action: action_get_weather
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
 
 - story: sad path 1
   steps:

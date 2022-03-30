@@ -9,6 +9,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - user_asks_weather
+  - user_thanks
 
 entities:
   - GPE 
