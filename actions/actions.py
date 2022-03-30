@@ -65,7 +65,7 @@ class ActionGetWeather(Action):
             windSpeed = x['wind']['speed']
             cloud = x['clouds']['all']
             
-            weatherData = """In {}, it is {} at the moment at {}{}C. \nThe humidity level is: {}%, \nwind speed: {}m/s,\n cloudiness in the sky is {}%.""".format(city, description, degree_sign,temperature, humidity, windSpeed, cloud)
+            weatherData = """In {}, it is {} at the moment at {}{}C. \nThe humidity level is: {}%, \nwind speed: {}m/s,\n cloudiness in the sky is {}%.""".format(city, description,temperature, degree_sign, humidity, windSpeed, cloud)
             
             
             dispatcher.utter_message(weatherData)

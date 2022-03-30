@@ -16,3 +16,8 @@ rules:
   steps:
   - intent: user_thanks
   - action: utter_user_thanks
+
+- rule: whenever user asks weather 
+  steps:
+  - intent: user_asks_weather
+  - action: action_get_weather

@@ -10,7 +10,6 @@ pipeline:
     model: "en_core_web_md"
   - name: SpacyTokenizer
   - name: SpacyFeaturizer
-  - name: WhitespaceTokenizer
   - name: SpacyEntityExtractor
     dimensions: ["GPE", "PERSON"]
   - name: RegexFeaturizer
@@ -22,6 +21,9 @@ pipeline:
     max_ngram: 4
   - name: DIETClassifier
     epochs: 100
+    entity_recognition: False
+
+
   # - name: EntitySynonymMapper
   # - name: ResponseSelector
   #   epochs: 100
