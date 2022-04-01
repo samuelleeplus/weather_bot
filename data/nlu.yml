@@ -19,7 +19,24 @@ nlu:
     - [Cairo](GPE)?
     - temperature in [Amsterdam](GPE)
     - [Venice](GPE) temperature now
-
+- intent: request_chucK_norris_joke
+  examples: | 
+    - can you tell me a chuck norris joke?
+    - tell me something about chuck norris?
+    - who is chuck norris? 
+    - what is chuck norris? 
+    - what is chuck norris doing right now?  
+    - tell me something funny about chuck norris
+- intent: request_joke
+  examples: | 
+    - can you tell me a joke?
+    - tell me a joke!
+    - can you tell me something funny? 
+    - do you know any funny jokes? 
+    - tell me something funny
+    - could you cheer me up with a joke? 
+    - i'd appreciate a good joke 
+    
 - intent: greet
   examples: |
     - hey

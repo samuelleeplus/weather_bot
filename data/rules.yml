@@ -7,6 +7,16 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
+- rule: user request chuck norris joke 
+  steps:
+  - intent: request_chucK_norris_joke
+  - action: action_chuck_norris_joke
+
+- rule: user request joke 
+  steps:
+  - intent: request_chucK_norris_joke
+  - action: action_joke
+  
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge

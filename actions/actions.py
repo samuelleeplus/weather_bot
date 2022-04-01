@@ -79,3 +79,33 @@ class ActionGetWeather(Action):
             dispatcher.utter_message(text="Could not find the city!")
 
 
+class ActionChuckNorrisJoke(Action):
+  def name(self):
+    return "action_chuck_norris_joke"
+
+  def run(self, dispatcher, tracker, domain):
+      #simple chuck norris joke 
+
+    try: 
+        request = requests.get('http://api.icndb.com/jokes/random').json()  # make an api call
+        joke = request['value']['joke']  # extract a joke from returned json response
+
+        dispatcher.utter_message(text=joke)  # send the message back to the user
+        return []
+    except Exception as e:
+        dispatcher.utter_message(text="Chuck Norris broke our codebase...")
+
+class ActionJoke(Action):
+  def name(self):
+    return "action_joke"
+
+  def run(self, dispatcher, tracker, domain):
+    #joke api
+
+    try: 
+        request = requests.get('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,racist,sexist,explicit&type=single').json()  # make an api call
+        joke = request['joke'] # extract a joke from returned json response
+        dispatcher.utter_message(text=joke)  # send the message back to the user
+        return []
+    except Exception as e:
+        dispatcher.utter_message(text="Ran out of jokes..apparently.")

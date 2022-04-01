@@ -10,6 +10,8 @@ intents:
   - bot_challenge
   - user_asks_weather
   - user_thanks
+  - request_chucK_norris_joke
+  - request_joke
 
 entities:
   - GPE 
@@ -20,6 +22,8 @@ slots:
 
 actions:
   - action_get_weather
+  - action_chuck_norris_joke
+  - action_joke
 
 responses:
   utter_user_thanks:
