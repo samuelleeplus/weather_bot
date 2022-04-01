@@ -65,7 +65,7 @@ class ActionGetWeather(Action):
             windSpeed = x['wind']['speed']
             cloud = x['clouds']['all']
             
-            weatherData = """In {}, it is {} at the moment at {}{}C. \nThe humidity level is: {}%, \nwind speed: {}m/s,\n cloudiness in the sky is {}%.""".format(city, description,temperature, degree_sign, humidity, windSpeed, cloud)
+            weatherData = """In {}, it is {}{}C and {}. \nThe humidity level is: {}%, \nwind speed: {}m/s,\n cloudiness in the sky is {}%.""".format(city, temperature, degree_sign, description,  humidity, windSpeed, cloud)
             
             
             dispatcher.utter_message(weatherData)
@@ -77,4 +77,5 @@ class ActionGetWeather(Action):
 
         except Exception as e:
             dispatcher.utter_message(text="Could not find the city!")
+
 
