@@ -14,9 +14,9 @@ rules:
 
 - rule: user request joke 
   steps:
-  - intent: request_chucK_norris_joke
+  - intent: request_joke
   - action: action_joke
-  
+
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge

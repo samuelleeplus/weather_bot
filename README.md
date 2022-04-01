@@ -4,6 +4,8 @@
 
 I built a simple chatbot that allows you ask for the weather of a particular city or country. 
 
+If you're bored, or need to laugh, ask the bot for a joke or something funny ("e.g. can you tell me a joke?"). Hopefully it will brighten your day. :)
+
 ## How to use
 
 1. Clone Repository 
@@ -19,7 +21,17 @@ I built a simple chatbot that allows you ask for the weather of a particular cit
 
 ```pip install -r requirements.txt```
 
-5. Run Rasa
+5. Get Open Weather Map API Key 
+
+You can get a free API key by signing in [here](https://openweathermap.org/price). Once you received the API key, set it as an environment variable. 
+
+In Windows, _Varible_ can be set to WEATHER_API_KEY. _Value_ is the api_key.  
+
+In linux, run this command in terminal.
+
+``` export WEATHER_API_KEY="api_key"```
+
+6. Run Rasa
 
 ``` rasa run actions ```. 
 
